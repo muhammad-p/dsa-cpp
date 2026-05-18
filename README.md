@@ -16,8 +16,8 @@ Every algorithm implemented here is subjected to a rigorous automated verificati
 2. Boundary & Extremal Conditions: Operational checks for minimal, maximal and empty input structures (e.g. zero-values, single-element collections, null references or structural termination points).
 3. Structural & Layout Hazards: test stress logic on complex data arrangements such as structural cycles, recursive depth limits, overlapping windows, and heavily skewed data distributions.
 4. Parameter Safety & Constraints: Validation of out-of-bounds inputs, negative ranges, invalid indexing, integer overflow boundaries, violation of algorithmic preconditions.
->  [!TIP]
-> The code executes in a fraction of a millisecond by eliminating interactive inputs and instead using hardcoded, automated test matrices. This prepares the whole codebase for benchmarking and makes it easy to debug.
+
+The code executes in a fraction of a millisecond by eliminating interactive inputs and instead using hardcoded, automated test matrices. This prepares the whole codebase for benchmarking and makes it easy to debug.
 
 This approach ensures that the self-written logic is production-grade, memory-safe and survivable in extreme edge cases.
 
@@ -29,33 +29,6 @@ The codebase is meticulously decoupled to separate abstract data storage mechani
 * **`📁 Implementations of Data Structures`**: Custom, ready to use templates of fundamental primitives built from the ground up.
 * **`📁 Algorithms`**: Isolated, highly optimized procedural solutions tackling classic competitive and interview problems.
 
-## Directory Tree
-
-```
-DSA-CPP/
-├── Algorithms/
-│   ├── Linked List/
-│   │   ├── reverseDLL.cpp
-│   │   ├── reverseSLL(iterative).cpp
-│   │   └── reverseSLL(recursive).cpp
-│   └── Stack/
-│       ├── reverseLlUsingStack.cpp
-│       └── reverseStringUsingStack.cpp
-├── Implementations of Data Structures/
-│   ├── Linked List/
-│   │   ├── Doubly Linked/
-│   │   │   └── InsertAndDeleteAtNthPosition.cpp
-│   │   └── Singly Linked/
-│   │       ├── insertAndDelete(nthPosition).cpp
-│   │       ├── insertAtBeginning.cpp
-│   │       ├── insertAtEnd(O(1)time).cpp
-│   │       └── insertAtNthPosition.cpp
-│   └── Stack/
-│       ├── arrayBasedStack.cpp
-│       └── linkedListBasedStack.cpp
-├── .gitignore
-└── README.md
-```
 ---
 ## How to Run
 
