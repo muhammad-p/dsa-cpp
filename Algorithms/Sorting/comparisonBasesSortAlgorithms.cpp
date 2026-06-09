@@ -93,9 +93,9 @@ int pivotIndex_hoare(std::vector<int> &nums, int low, int high)
         int i = low, j = high;
     while (i < j)
     {
-        while (nums[i] <= pivot && i < high)
+        while (i < high && nums[i] <= pivot )
             i++;
-        while (nums[j] > pivot && j > low)
+        while ( j > low && nums[j] > pivot )
             j--;
         if (i < j)
             std::swap(nums[i], nums[j]);
